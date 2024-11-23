@@ -1,14 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Gallery from "./Gallery";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Gallery />} />
-      </Routes>
-    </Router>
+    <div>
+      <h1 style={{ textAlign: "center", margin: "20px 0" }}>Tourism App</h1>
+      <Gallery />
+    </div>
   );
 };
 
